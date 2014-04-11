@@ -7,9 +7,9 @@ return {
 	wofs = false,
 	shell = true,
 	advanced_shell = false,
-	sercon = { uart = 3, speed = 115200, timer=systimer, flow=none, buf_size=32 },        
+	sercon = { uart = 0, speed = 115200, timer=systimer, flow=none, buf_size=32 },        
     xmodem = true,
-	term = { lines = 25, cols = 50 },
+	term = false,
 	cints = false,
 	luaints = false,
 	tcip = false,
@@ -30,7 +30,7 @@ return {
     ram = { internal_rams = 1 }
   },
   modules = {
-    generic = { 'all_lua', 'cpu', 'elua', 'pd', 'pio', 'term', 'tmr', 'uart'},
+    generic = { 'all_lua', 'elua', 'pd', 'pio', 'term', 'tmr', 'uart'},
     platform = 'all'
   }
 }
