@@ -26,3 +26,5 @@ sdcard.img
 core
 luarpc*
 *.map
+*.mk
+*.ld
